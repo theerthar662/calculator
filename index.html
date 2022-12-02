@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <h1 class="mt-5" style="text-align:center;color:white;">Calculator</h1>
+    <div class="calc-body">
+
+        <!----------------calculator display screen  --------------->
+
+        <div class="calc-screen">
+            <div id="calc-typed">
+                <input type="text" id="result" class="form-control">
+
+            </div>
+        </div>
+        <!-- Calculator buttons -->
+        <div class="calc-button-row">
+
+            <button id="seven" onclick="display('7')">7</button>
+            <button id="eight" onclick="display('8')">8</button>
+            <button id="nine" onclick="display('9')">9</button>
+            <button id="mul" onclick="display('*')" class="opt">&#215;</button>
+            <button id="four" onclick="display('4')">4</button>
+            <button id="five" onclick="display('5')">5</button>
+            <button id="six" onclick="display('6')">6</button>
+            <button id="sub" onclick="display('-')" class="opt">&#8722;</button>
+            <button id="one" onclick="display('1')">1</button>
+            <button id="two" onclick="display('2')">2</button>
+            <button id="three" onclick="display('3')">3</button>
+            <button id="add" onclick="display('+')" class="opt">&#43;</button>
+            <button id="ac" onclick="allClr()" class="ac">AC</button>
+            <button id="zero" onclick="display('0')">0</button>
+            <button id="div" onclick="display('/')" class="opt">&#247;</button>
+            <button id="equal" onclick="equal()" class="opt">&#61;</button>
+            <button id="del" onclick="back()">&#9003;</button> 
+        </div>
+    </div>
+
+</body>
+<!-- link js file -->
+<script src="./calc.js"></script>
+
+</html>
